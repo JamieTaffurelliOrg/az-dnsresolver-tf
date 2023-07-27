@@ -29,7 +29,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_dns_resolver_name"></a> [dns\_resolver\_name](#input\_dns\_resolver\_name) | DNS resolver name | `string` | n/a | yes |
-| <a name="input_inbound_endpoints"></a> [inbound\_endpoints](#input\_inbound\_endpoints) | Private DNS resolver inbound endpoints | <pre>object(<br>    {<br>      name      = string<br>      subnet_id = string<br>    }<br>  )</pre> | n/a | yes |
+| <a name="input_inbound_endpoints"></a> [inbound\_endpoints](#input\_inbound\_endpoints) | Private DNS resolver inbound endpoints | <pre>list(object(<br>    {<br>      name      = string<br>      subnet_id = string<br>    }<br>  ))</pre> | n/a | yes |
 | <a name="input_location"></a> [location](#input\_location) | Resource Group name to deploy to | `string` | n/a | yes |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | Resource Group name to deploy to | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | Tags to apply | `map(string)` | n/a | yes |

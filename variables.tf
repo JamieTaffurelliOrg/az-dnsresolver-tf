@@ -19,12 +19,12 @@ variable "virtual_network_id" {
 }
 
 variable "inbound_endpoints" {
-  type = object(
+  type = list(object(
     {
       name      = string
       subnet_id = string
     }
-  )
+  ))
   description = "Private DNS resolver inbound endpoints"
 }
 
